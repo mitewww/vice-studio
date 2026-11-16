@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Vice Studio – connecting TikTok</title>
+<style>body{margin:0;background:#0f1013;color:#e8e6e1;font:16px/1.6 system-ui,sans-serif;display:grid;place-items:center;height:100vh}div{max-width:460px;text-align:center;padding:20px}a{color:#e9cf9a}</style>
+</head>
+<body>
+<div>
+  <p><b>Connecting TikTok to Vice Studio…</b></p>
+  <p id="msg">Handing the sign-in to Vice Studio on this computer.</p>
+</div>
+<script>
+  // TikTok sends the browser here after you approve. Nothing is stored or sent anywhere else: the same
+  // query (code and state) is passed on to Vice Studio running on this computer.
+  (function () {
+    var q = window.location.search;
+    if (!q || q.indexOf('state=') < 0) { document.getElementById('msg').textContent = 'Nothing to hand over. Start from Connect TikTok in Vice Studio.'; return; }
+    var to = 'http://127.0.0.1:3517/oauth/tiktok' + q;
+    window.location.replace(to);
+    setTimeout(function () { document.getElementById('msg').innerHTML = 'If nothing happens, make sure Vice Studio is open, then <a href="' + to.replace(/"/g, '&quot;') + '">click here</a>.'; }, 2500);
+  })();
+</script>
+</body>
+</html>
