@@ -3,39 +3,115 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vice Studio – Privacy Policy</title>
+<title>Vice Studio – edit gaming clips and post them to TikTok</title>
+<meta name="description" content="Vice Studio is a desktop video studio that turns gaming clips into vertical videos, adds captions, and posts them to your own TikTok, YouTube and Instagram accounts.">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="Vice Studio – edit gaming clips and post them to TikTok">
+<meta property="og:description" content="Vice Studio is a desktop video studio that turns gaming clips into vertical videos, adds captions, and posts them to your own TikTok, YouTube and Instagram accounts.">
+<meta property="og:image" content="icon-512.png">
 <style>
-  body { margin: 0; background: #0f1013; color: #e8e6e1; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
-  main { max-width: 720px; margin: 0 auto; padding: 48px 20px; }
-  h1 { color: #e9cf9a; font-size: 28px; margin: 0 0 4px; }
-  .sub { color: #9b978e; margin: 0 0 32px; }
-  h2 { font-size: 17px; margin: 28px 0 6px; color: #f3efe6; }
-  a { color: #e9cf9a; }
-  nav { margin-bottom: 32px; }
+  :root { --bg:#0f1013; --panel:#17181c; --line:#26272d; --ink:#e8e6e1; --mute:#9b978e; --gold:#e9cf9a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  a { color: var(--gold); }
+  header.top { border-bottom: 1px solid var(--line); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  .bar { display: flex; align-items: center; gap: 12px; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 700; letter-spacing: .02em; }
+  .brand img { width: 32px; height: 32px; border-radius: 8px; }
+  nav.links { margin-left: auto; display: flex; gap: 18px; font-size: 14px; }
+  nav.links a { color: var(--mute); text-decoration: none; }
+  nav.links a:hover, nav.links a.on { color: var(--ink); }
+  footer { border-top: 1px solid var(--line); margin-top: 64px; padding: 24px 0 40px; color: var(--mute); font-size: 14px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+  footer a { color: var(--mute); }
+  .doc { max-width: 720px; margin: 0 auto; padding: 40px 20px 0; }
+  .doc h1 { color: var(--gold); font-size: 30px; margin: 0 0 4px; }
+  .doc h2 { font-size: 17px; margin: 28px 0 6px; color: #f3efe6; }
+  .sub { color: var(--mute); margin: 0 0 28px; }
+  @media (max-width: 560px) { nav.links { gap: 12px; font-size: 13px; } .brand span { display: none; } }
+  .hero { padding: 64px 0 40px; display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
+  .hero h1 { font-size: 44px; line-height: 1.1; margin: 0 0 14px; }
+  .hero h1 em { font-style: normal; color: var(--gold); }
+  .hero p { color: var(--mute); font-size: 18px; margin: 0 0 22px; max-width: 540px; }
+  .hero img { width: 220px; height: 220px; border-radius: 44px; box-shadow: 0 20px 60px rgba(0,0,0,.5); }
+  .pill { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: 13px; color: var(--mute); margin: 0 6px 6px 0; }
+  section { padding: 36px 0; border-top: 1px solid var(--line); }
+  section h2 { font-size: 26px; margin: 0 0 8px; }
+  p.lead { color: var(--mute); margin: 0 0 24px; max-width: 680px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 17px; color: #f3efe6; }
+  .card p { margin: 0; color: var(--mute); font-size: 15px; }
+  .num { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--gold); color: #17140e; font-weight: 700; font-size: 14px; margin-bottom: 10px; }
+  .tbl { overflow-x: auto; margin-top: 22px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  td, th { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--mute); font-weight: 600; }
+  code { background: #23242a; padding: 1px 6px; border-radius: 5px; font-size: 14px; }
+  @media (max-width: 760px) { .hero { grid-template-columns: 1fr; padding-top: 40px; } .hero img { width: 140px; height: 140px; border-radius: 30px; order: -1; } .hero h1 { font-size: 34px; } .grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
+<header class="top"><div class="wrap bar">
+  <a class="brand" href="./"><img src="icon-512.png" alt="Vice Studio logo" width="32" height="32"><span>Vice Studio</span></a>
+  <nav class="links"><a href="./" class="on">Home</a><a href="./#tiktok">TikTok</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></header>
+
 <main>
-  <nav><a href="./">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></nav>
-  <h1>Vice Studio – Privacy Policy</h1>
-  <p class="sub">Last updated: 17 November 2026</p>
+<div class="wrap hero">
+  <div>
+    <h1>Turn gaming clips into <em>ready&#8209;to&#8209;post</em> vertical videos.</h1>
+    <p>Vice Studio is a desktop video studio for gaming creators. Cut a clip, lay out the gameplay and webcam, add captions and music, then post the finished video to your own TikTok, YouTube or Instagram account.</p>
+    <span class="pill">Windows desktop app</span><span class="pill">9:16, 1:1 and 16:9</span><span class="pill">Runs on your own computer</span>
+  </div>
+  <img src="icon-512.png" alt="Vice Studio app icon" width="220" height="220">
+</div>
 
-  <p>Vice Studio is a personal desktop tool used only by its owner to edit their own gaming clips and post them to their own social media accounts. It has no other users.</p>
+<section><div class="wrap">
+  <h2>What it does</h2>
+  <p class="lead">Everything a gaming clip needs before it goes out, in one place.</p>
+  <div class="grid">
+    <div class="card"><h3>Edit</h3><p>Trim and cut clips, stack the webcam over the gameplay, zoom in on key moments and add transitions.</p></div>
+    <div class="card"><h3>Captions</h3><p>Automatic word-by-word captions, made on your own computer, that you can correct and style.</p></div>
+    <div class="card"><h3>Text and sound</h3><p>Titles, channel tags, background music and sound effects, with even loudness for phones.</p></div>
+    <div class="card"><h3>Any shape</h3><p>Vertical 9:16 for TikTok and Shorts, square 1:1, or widescreen 16:9 for longer YouTube videos.</p></div>
+    <div class="card"><h3>Post</h3><p>Send the finished video to your connected TikTok, YouTube or Instagram account, with your caption and privacy choice.</p></div>
+    <div class="card"><h3>Schedule</h3><p>Pick a time and the video goes out then, while Vice Studio is running on your computer.</p></div>
+  </div>
+</div></section>
 
-  <h2>What it accesses</h2>
-  <p>When the owner connects a TikTok account, Vice Studio receives basic profile information (display name and avatar) and permission to post videos the owner chooses to that account.</p>
+<section id="tiktok"><div class="wrap">
+  <h2>Posting to TikTok</h2>
+  <p class="lead">Vice Studio uses TikTok's official Login Kit and Content Posting API. You stay in control of every post.</p>
+  <div class="grid">
+    <div class="card"><span class="num">1</span><h3>Connect your account</h3><p>Sign in with TikTok and approve access. Vice Studio shows which account is connected.</p></div>
+    <div class="card"><span class="num">2</span><h3>Choose the details</h3><p>Before each post you write the caption and choose who can see it, and whether comments, Duet and Stitch are allowed.</p></div>
+    <div class="card"><span class="num">3</span><h3>Press Post</h3><p>The video is uploaded to your own TikTok account. Nothing is posted unless you choose it.</p></div>
+  </div>
+  <div class="tbl"><table>
+    <tr><th>Permission</th><th>What it is used for</th></tr>
+    <tr><td><code>user.info.basic</code></td><td>Shows the name and picture of the connected account, so you know where the video goes.</td></tr>
+    <tr><td><code>video.publish</code></td><td>Posts the video you finished to your profile, with the caption and privacy you chose.</td></tr>
+    <tr><td><code>video.upload</code></td><td>Sends a video to your TikTok inbox as a draft, to finish in the TikTok app.</td></tr>
+  </table></div>
+  <p style="color:var(--mute);font-size:15px;margin-top:16px">Sign-in tokens stay on your own computer. You can disconnect at any time in Vice Studio, or in TikTok under Settings › Security › Manage app permissions. Read the <a href="privacy.html">Privacy Policy</a>.</p>
+</div></section>
 
-  <h2>How it is used</h2>
-  <p>Only to show which account is connected and to post the owner's own videos when the owner tells it to.</p>
-
-  <h2>Storage</h2>
-  <p>Sign-in tokens and settings are stored only on the owner's own computer. Nothing is sold, shared or sent to any server run by Vice Studio; there is none.</p>
-
-  <h2>Removal</h2>
-  <p>The owner can disconnect at any time in Vice Studio, or remove access in TikTok under Settings › Security › Manage app permissions. Deleting Vice Studio deletes all stored data.</p>
-
-  <h2>Contact</h2>
-  <p>hekfut@gmail.com</p>
+<section><div class="wrap">
+  <h2>Who makes it</h2>
+  <p class="lead" style="margin-bottom:0">Vice Studio is made by an independent gaming creator to publish their own Counter-Strike 2 and GTA videos. Questions: <a href="mailto:YOUR-EMAIL-HERE">YOUR-EMAIL-HERE</a>.</p>
+</div></section>
 </main>
+<footer><div class="wrap">
+  <span>© 2026 Vice Studio</span>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Service</a>
+  <a href="mailto:YOUR-EMAIL-HERE">Contact</a>
+  <span>Not affiliated with or endorsed by TikTok, YouTube or Instagram.</span>
+</div></footer>
 </body>
 </html>
